@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>friend list</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-boxx;
+        }
+
+        body {
+            background-color: #999999;
+        }
+
+        .container {
+            max-width: 60rem;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        nav {
+            width: 100%;
+            height: 7.5rem;
+            background-color: #000000;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: 15rem 1fr;
+        }
+
+        .nav-grid .logo {
+            margin-top: 3rem;
+            color: #ffffff;
+        }
+
+        .nav-grid .logo h1 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        .nav-grid .menu ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-top: 4rem;
+            grid-gap: 2rem;
+        }
+
+        .nav-grid .menu ul li {
+            list-style: none;
+        }
+
+        .nav-grid .menu ul a {
+            color: #fff;
+            text-decoration: none;
+            transition: .3s ease-in-out;
+        }
+
+        .nav-grid .menu ul a:hover {
+            background-color: rgb(46, 43, 43);
+            padding: 2rem 2rem;
+        }
+
+        .content .container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content .container .friend-name-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .friend-name-list h1{
+            display: inline-block;
+            padding: 2rem;
+            background-color: #fffff5;
+            border-radius: 1rem;
+            box-shadow: 0.4rem 0.4rem 1rem #000005;
+        }
+
+        .name-table table {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            background-color: 	#fffff5;
+            box-shadow: 0.4rem 0.4rem 1rem #000005;
+        }
+
+        table,th,td {
+            border: 3px solid #000005;
+        }
+
+        th,td {
+            padding: 2rem;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-grid">
+                    <div class="logo">
+                        <h1>Nontakorn</h1>
+                    </div>
+                    <!-- logo -->
+                    <div class="menu">
+                        <ul>
+                            <li><a href="/Homework1/html/index.html">Homepage</a></li>
+                            <li><a href="./profile.html">Profile</a></li>
+                            <li><a href="./friend.html">Friend</a></li>
+                        </ul>
+                    </div>
+                    <!-- menu-->
+                </div>
+                <!-- nav-grid -->
+            </div>
+            <!-- container -->
+        </nav>
+        <!-- nav -->
+    </header>
+    <!-- hearder -->
+
+    <section class="content">
+        <div class="container">
+            <div class="friend-name-list">
+                <h1>Friend Name Table</h1>
+                <div class="name-table">
+                    <table>
+                        <tr>
+                            <th>ชื่อ-นามสกุล</th>
+                            <th>Nickname</th>
+                            <th>Line Account</th>
+                            <th>Codename</th>
+                            <th>Current Lesson</th>
+                        </tr>
+                        <tr>
+                            <td>Piyawat Sengsae</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>ศศิชนม์ รัตนคันทรง</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Kanokwan Dulyapraphant</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Kajornkiat Dhamabutra</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>ทรงพล สังข์รุ่ง</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Sorawit Kitsawat</td>
+                            <td>Best</td>
+                            <td>B</td>
+                            <td>SKit</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Wannarat Boonwong</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Yonlawan Chirawatcharadej</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Pakasupt Petchdee</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>สาธิต ปิงสุทธิวงศ์</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Thatsawat Imoeb</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>theeraphat sinrattanavong</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>ปวริศร์ เสรีชัยพร</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>janjira maneenil</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Polpayup Ardsoongnearn</td>
+                            <td>Pong</td>
+                            <td>Pong</td>
+                            <td>PTun</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>ปพนพล บุญมี</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Apinya Pituxchaitum</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Jennita Janeamnuayporn</td>
+                            <td>Mi</td>
+                            <td>Mi Mi</td>
+                            <td>Jjane</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Natthanon Phannil</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>สมัชญ์ สุขพาสน์เจริญ</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Jatupoom Tenprakron</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>สุภานัน อินแผลง</td>
+                            <td>อิ๋ม</td>
+                            <td>สุภานัน</td>
+                            <td>Sinp</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Sirasa Suchiva</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Kyaw tun Win</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Warakorn Pakanan</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Pongsak Pratumket</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Akara Pattamasukhon</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Thanaphon Teenimith</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>ธรรมรัตน์ ภู่พัลลภ</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Choonhanunt Amnuaychaikij</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Naptang Wongphan</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Piyada Jinsiri</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Tanaphong Hachack</td>
+                            <td>Art</td>
+                            <td>arT</td>
+                            <td>THac</td>
+                            <td>CSS P.2</td>
+                        </tr>
+                        <tr>
+                            <td>Tanapol Warinkud</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>atchaea wiangsima</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>ลดาวดี คูณขุนทด</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>CHARATH SOMNIKHA</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Nontakorn Setthachoduek</td>
+                            <td>got</td>
+                            <td>got</td>
+                            <td>Ngot</td>
+                            <td>git</td>
+                        </tr>
+                        <tr>
+                            <td>werachai kurathong</td>
+                            <td>V</td>
+                            <td>egmuv</td>
+                            <td>Werachai</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Adil Wadu</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>พรสวรรค์ สุขแสงจันทร์</td>
+                            <td>somo</td>
+                            <td>somo</td>
+                            <td>Psuk</td>
+                            <td>HTML</td>
+                        </tr>
+                        <tr>
+                            <td>Natthapong Sirisit</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Don Klanakin</td>
+                            <td>DK</td>
+                            <td>DK</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Orathai Thanprasan</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Nattakoon Makrak</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Prakasit Namarsa</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Pradchai Wanjararat</td>
+                            <td>ice</td>
+                            <td>LazxusZ</td>
+                            <td>LazxusZ</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>สุรศักดิ์ สิงห์ป้อง</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Wittawat Thatsirisakun</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>ภานุพงศ์ ขันทะชา</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Sivaporn Thepkom</td>
+                            <td>Tang</td>
+                            <td>TANG</td>
+                            <td>Sthep</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Unticha Pramgoed</td>
+                            <td>Blaa(ปลา)</td>
+                            <td>blaa_unticha</td>
+                            <td>UPram</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td> Prachaya Orraeiam</td>
+                            <td>OHM</td>
+                            <td>ohmeiam</td>
+                            <td>Orr.prach</td>
+                            <td>HTML</td>
+                        </tr>
+                    </table>
+                    <!-- table -->
+                </div>
+                <!-- name-table -->
+            </div>
+            <!-- friend-name-list -->
+        </div>
+        <!-- container -->
+    </section>
+    <!-- content -->
+</body>
+
+</html>

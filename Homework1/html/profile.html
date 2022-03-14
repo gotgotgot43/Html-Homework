@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-boxx;
+        }
+
+        body{
+            background-color:#999999;
+        }
+        .container{
+            max-width:60rem;
+            width: 100%;
+            margin:0 auto;
+        }
+        
+        nav {
+            width: 100%;
+            height: 7.5rem;
+            background-color: #000000;
+        }
+        .nav-grid{
+            display: grid;
+            grid-template-columns: 15rem 1fr;
+        }
+        .nav-grid .logo{
+            margin-top: 3rem;
+            color: 	#ffffff;
+        }
+
+        .nav-grid .logo h1 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        .nav-grid .menu ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-top: 4rem;
+            grid-gap: 2rem;
+        }
+
+        .nav-grid .menu ul li{
+            list-style: none;
+        }
+
+        .nav-grid .menu ul a{
+            color: #fff;
+            text-decoration: none;
+            transition: .3s ease-in-out;
+        }
+
+        .nav-grid .menu ul a:hover{
+            background-color: rgb(46, 43, 43);
+            padding: 2rem 2rem;
+        }
+
+        .content .container{
+            width: 60%;
+            border:0.5rem solid #000005;
+            margin-top: 5rem;
+            background-color: #fffff5;
+            margin-bottom: 5rem;
+            border-radius: 2rem;
+            box-shadow: 0rem 0rem 3rem #000000;
+            
+            
+        }
+
+        .content-grid{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .content-grid h1{
+            margin-top: 2rem;
+        }
+
+        .profile-image{
+            width: 25rem;
+            height: auto;
+
+            
+        }
+
+        .profile-image img{
+            border-radius: 0.6rem;
+            border: dashed #000005 0.4rem;
+            width: 100%;
+            height: 100%;
+        }
+
+        .content-info{
+            padding: 3rem;
+        }
+
+        .content-info-image{
+            width: 60%;
+        }
+
+        .content-info-image img{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin-top: 1rem;
+            border-radius: 3rem;
+            box-shadow: #999999 1rem 1rem 1rem;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-grid">
+                    <div class="logo">
+                        <h1>Nontakorn</h1>
+                    </div>
+                    <!-- logo -->
+                    <div class="menu">
+                        <ul>
+                            <li><a href="./index.html">Homepage</a></li>
+                            <li><a href="./profile.html">Profile</a></li>
+                            <li><a href="./friend.html">Friend</a></li>
+                        </ul>
+                    </div>
+                    <!-- menu-->
+                </div>
+                <!-- nav-grid -->
+            </div>
+            <!-- container -->
+        </nav>
+        <!-- nav -->
+    </header>
+    <!-- hearder -->
+
+    <section>
+        <div class="content">
+            <div class="container">
+                <div class="content-grid">
+                    <h1>My Profile</h1><br><br>
+                    <div class="profile-image">
+                        <img src="../pic/LINE_P20201122_232308.jpg" alt="My pic">
+                    </div>
+                    <!-- profile-image -->
+                    <div class="content-info">
+                        <h2>Personal Information</h2><br><br>
+                        <h3>Name: Nontakorn Settachoduek</h3><br>
+                        <h3>Nickname: got</h3><br>
+                        <h3>Domicile: 419/24 Chomphol P., Samruan, AMPHUR ฺBang Pa-In, PHRA NAKHON SI AYUTTHAYA 13160,TEL: 35709865</h3><br>
+                        <h3>Hobby: Reading, Manga ,Novel and Watching Streming Platform</h3>
+                        <div class="content-info-image">
+                            <img src="../pic/my-desk-setting.jpg" alt="My Hobby">
+                        </div>
+                        <!-- content-info-image -->
+                    </div>
+                    <!-- content-info -->
+                </div>
+                <!-- content-grid -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- content -->
+    </section>
+
+</body>
+</html>

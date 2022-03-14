@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-boxx;
+        }
+
+        body{
+            background-color:#999999;
+        }
+        .container{
+            max-width:60rem;
+            width: 100%;
+            margin:0 auto;
+        }
+        
+        nav {
+            width: 100%;
+            height: 7.5rem;
+            background-color: #000000;
+        }
+        .nav-grid{
+            display: grid;
+            grid-template-columns: 15rem 1fr;
+        }
+        .nav-grid .logo{
+            margin-top: 3rem;
+            color: 	#ffffff;
+        }
+
+        .nav-grid .logo h1 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        .nav-grid .menu ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-top: 4rem;
+            grid-gap: 2rem;
+        }
+
+        .nav-grid .menu ul li{
+            list-style: none;
+        }
+
+        .nav-grid .menu ul a{
+            color: #fff;
+            text-decoration: none;
+            transition: .3s ease-in-out;
+        }
+
+        .nav-grid .menu ul a:hover{
+            background-color: rgb(46, 43, 43);
+            padding: 2rem 2rem;
+        }
+
+        .content .container{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            margin-top: 5rem;
+        }
+        .card{
+            width: 30%;
+            box-shadow: 5px 5px 100px #000005;
+            border-radius: 2rem 2rem 2rem 2rem;
+            
+        }
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            border-radius: 2rem 2rem 0 0;
+            
+        }
+
+        .card-grid{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 10rem;
+            background-color: #fffff5;
+            border-radius: 0 0 2rem 2rem;
+        }
+
+        .card-content h2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .card-content h3{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1rem;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .card-content p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 0.93rem;
+            font-style: oblique;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-grid">
+                    <div class="logo">
+                        <h1>Nontakorn</h1>
+                    </div>
+                    <!-- logo -->
+                    <div class="menu">
+                        <ul>
+                            <li><a href="./index.html">Homepage</a></li>
+                            <li><a href="./profile.html">Profile</a></li>
+                            <li><a href="./friend.html">Friend</a></li>
+                        </ul>
+                    </div>
+                    <!-- menu-->
+                </div>
+                <!-- nav-grid -->
+            </div>
+            <!-- container -->
+        </nav>
+        <!-- nav -->
+    </header>
+    <!-- hearder -->
+
+    <section class="content">
+        <div class="container">
+            <div class="card">
+                <div class="card-grid">
+                    <img src="../pic/define-me1.jpg" alt="">
+                    <div class="card-content">
+                        <h2>Nontakorn Settachoduek</h2><br>
+                        <h3>Motto</h3><br>
+                        <p>the more you known, the more you grow</p>
+
+                    </div>
+                    <!-- card-content -->
+                </div>
+                <!-- card grid -->
+            </div>
+            <!-- card -->
+        </div>
+        <!-- container -->
+    </section>
+</body>
+</html>
